@@ -25,7 +25,7 @@ SECRET_KEY = '@ze4x1em_8!ol!4nx&xfp%!a=@#u$rc$m&+=6fo-akj3^3jh-*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://andresgh369.pythonanywhere.com']
+ALLOWED_HOSTS = ['andresgh369.pythonanywhere.com']
 
 
 # Application definition
@@ -130,9 +130,9 @@ STATIC_URL = '/static/'
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ORIGIN_WHITELIST = (
-    'http://andresgh369.github.io/'
+    'andresgh369.github.io/'
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
-    'http://andresgh369.github.io/'
+    'andresgh369.github.io/'
 )
 
