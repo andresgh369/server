@@ -130,8 +130,8 @@ STATIC_URL = '/static/'
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ORIGIN_WHITELIST = (
-    'andresgh369.github.io'
+    'https://andresgh369.github.io/'
 )
 CORS_ORIGIN_REGEX_WHITELIST = (
-    'andresgh369.github.io'
+    'https://andresgh369.github.io/'
 )
