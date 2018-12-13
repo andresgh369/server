@@ -1,7 +1,11 @@
-from .models import Perro
+from .models import Lista, Producto
 from rest_framework import viewsets
-from blog.serializers import PerroSerializer
+from blog.serializers import Listaserializer, Productoserializer
 
-class PerroViewSet( viewsets.ModelViewSet ):
-    queryset = Perro.objects.all().order_by( 'estado' )
-    serializer_class = PerroSerializer
+class ListaViewSet( viewsets.ModelViewSet ):
+    queryset = Lista.objects.all()
+    serializer_class = Listaserializer
+	
+class ProductoViewSet( viewsets.ModelViewSet ):
+    queryset = Producto.objects.all()
+    serializer_class = Productoserializer

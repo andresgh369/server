@@ -1,7 +1,12 @@
-from .models import Perro
+from .models import Lista, Producto
 from rest_framework import serializers
 
-class PerroSerializer( serializers.HyperlinkedModelSerializer ):
+class Listaserializer( serializers.HyperlinkedModelSerializer ):
     class Meta:
-        model = Perro
-        fields = ( 'id', 'name', 'estado', 'description', 'imageUrl' )
+        model = Lista
+        fields = ( 'id', 'name')
+		
+class Productoserializer( serializers.HyperlinkedModelSerializer ):
+    class Meta:
+        model = Producto
+        fields = ( 'id','name','costop','costor','tienda','notas')
