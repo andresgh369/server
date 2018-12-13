@@ -1,6 +1,6 @@
-from .models import Lista, Producto
+from .models import Lista, Producto, Usuario
 from rest_framework import viewsets
-from blog.serializers import Listaserializer, Productoserializer
+from blog.serializers import Listaserializer, Productoserializer, Usuarioserializer
 
 class ListaViewSet( viewsets.ModelViewSet ):
     queryset = Lista.objects.all()
@@ -9,3 +9,7 @@ class ListaViewSet( viewsets.ModelViewSet ):
 class ProductoViewSet( viewsets.ModelViewSet ):
     queryset = Producto.objects.all()
     serializer_class = Productoserializer
+
+class UsuarioViewSet( viewsets.ModelViewSet ):
+    queryset = Usuario.objects.all()
+    serializer_class = Usuarioserializer

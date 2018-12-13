@@ -1,13 +1,14 @@
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from blog.models import Lista, Producto
+from blog.models import Lista, Producto, Usuario
 from blog import views
 from django.conf.urls import url, include
 
 router = routers.DefaultRouter()
 router.register( r'lista', views.ListaViewSet )
 router.register( r'producto', views.ProductoViewSet )
+router.register( r'usuario', views.UsuarioViewSet )
 
 
 urlpatterns = [
